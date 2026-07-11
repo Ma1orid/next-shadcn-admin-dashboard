@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { Zap } from "lucide-react";
 
 import { Separator } from "@/components/ui/separator";
-import { APP_CONFIG } from "@/config/app-config";
 
 import styles from "./auth.module.css";
 

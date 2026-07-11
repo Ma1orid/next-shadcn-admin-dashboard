@@ -282,3 +282,107 @@ html {
     -webkit-print-color-adjust: exact;
   }
 }
+
+/* Custom family card animations */
+@keyframes family-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes family-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes family-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes family-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes family-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes family-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.animation-bounce {
+  animation: family-bounce 1.5s ease-in-out infinite;
+}
+
+.animation-pulse {
+  animation: family-pulse 2s ease-in-out infinite;
+}
+
+.animation-spin {
+  animation: family-spin 3s linear infinite;
+}
+
+.animation-float {
+  animation: family-float 2.5s ease-in-out infinite;
+}
+
+.animation-shake {
+  animation: family-shake 0.5s ease-in-out infinite;
+}
+
+.animation-glow {
+  animation: family-glow 2s ease-in-out infinite;
+}
+
+.pro-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pro-badge::before {
+  content: "⭐";
+}
