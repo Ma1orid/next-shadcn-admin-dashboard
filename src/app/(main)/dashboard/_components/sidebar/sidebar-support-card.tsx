@@ -16,7 +16,7 @@ export function SidebarSupportCard() {
             href="https://discord.gg"
             target="_blank"
             rel="noreferrer"
-            aria-label="Присоединиться на Discord"
+            aria-label="Присоединиться в Discord"
             className="inline-flex items-center text-foreground"
           >
             <SimpleIcon icon={siDiscord} aria-hidden className="size-3 fill-current" />
