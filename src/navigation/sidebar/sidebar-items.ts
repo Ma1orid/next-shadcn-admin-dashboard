@@ -169,6 +169,13 @@ export const sidebarItems: NavGroup[] = [
         icon: Users,
       },
       {
+        id: "families",
+        title: "Все семьи",
+        url: "/dashboard/families",
+        icon: Users,
+        badge: "new",
+      },
+      {
         id: "roles",
         title: "Роли",
         url: "/dashboard/roles",
