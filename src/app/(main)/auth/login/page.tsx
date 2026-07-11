@@ -2,7 +2,7 @@ import { Globe } from "lucide-react";
 
 import { APP_CONFIG } from "@/config/app-config";
 
-import { DiscordButton } from "../../_components/social-auth/discord-button";
+import { DiscordButton } from "../_components/social-auth/discord-button";
 
 export default function LoginV2() {
   return (
